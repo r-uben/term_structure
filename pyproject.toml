@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "term-structure"
+version = "0.1.0"
+description = "Replication package of the paper 'Towards Data-Congruent Models of the Term Structure of Interest Rates'"
+authors = ["Carlo A. Favero <carlo.favero@unibocconi.it> and Rubén Fernández-Fuertes <ruben.fernandez@phd.unibocconi.it>"]
+readme = "README.md"
+packages = [
+    { include = "src" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+scipy = "1.11.4"
+matplotlib = "^3.8.4"
+statsmodels = "^0.14.2"
+scikit-learn = "^1.4.2"
+seaborn = "^0.13.2"
+plotly = "^5.22.0"
+tqdm = "^4.66.4"
+
+# Data handling and APIs
+duckdb = "^0.10.2"
+boto3 = "^1.34.98"
+awscli = "^1.32.98"
+pandas-datareader = "^0.10.0"
+
+# Jupyter environment
+ipykernel = "^6.29.4"
+jupyter = "^1.0.0"
+
+# GUI and visualization
+pyqt5 = "^5.15.10"
+qrcode = "^7.4.2"
+
+# Build tools
+setuptools = "^70.0.0"
+
+[tool.poetry.scripts]
+forecast_time_series = "mains.forecast_time_series:main"
+get_term_premia = "mains.get_term_premia:main"
+main = "mains.main:main"
+out_of_sample_comparisons = "mains.out_of_sample_comparisons:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.2.0"
+black = "^21.5b2"
+flake8 = "^3.9.0"
+mypy = "^0.910"
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
