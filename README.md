@@ -70,52 +70,14 @@ poetry shell
 
 ## Usage
 
-The project includes several main scripts that can be run using Poetry:
+The project includes several main scripts that can be run using Poetry. For example, to create model figures:
 
-1. Create Model Figures:
 ```bash
 poetry run create_figures
 ```
 This generates both individual and combined plots for ACM and FF models in the `data/figures` directory.
-
-2. Generate Term Premia:
-```bash
-poetry run get_term_premia
 ```
 
-3. Run Main Analysis:
-```bash
-poetry run main
-```
-
-4. Run Out-of-Sample Comparisons:
-```bash
-poetry run out_of_sample_comparisons
-```
-
-## Development
-
-The project uses several development tools, all configured in `pyproject.toml`:
-
-- `black` for code formatting:
-```bash
-poetry run black .
-```
-
-- `flake8` for linting:
-```bash
-poetry run flake8 src tests
-```
-
-- `mypy` for type checking:
-```bash
-poetry run mypy src
-```
-
-- `pytest` for testing:
-```bash
-poetry run pytest
-```
 
 ## Models
 

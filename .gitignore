@@ -69,8 +69,6 @@ log/
 
 # Data and figures
 *.svg
-data/figures/**/*.png
-data/figures/**/*.svg
 !data/figures/README.md
 
 # OS specific
