@@ -2,7 +2,7 @@ from src.model.data.macro_data import MacroData
 from src.model.data.yield_curve import YieldCurve
 from src.model.time.time_window import TimeWindow
 from src.paths import Paths
-from src.utils.model_utils import Utils
+from src.utils.base_utils import Utils
 
 import statsmodels.api as sm
 

@@ -37,9 +37,6 @@ class Utils(Paths):
         recession_groups = recession_periods.groupby((recession_periods.index.to_series().diff() > pd.Timedelta(days=90)).cumsum())
         return recession_groups
 
-    @staticmethod
-    def find_data(data):
-        return Paths().data_path / data
 
     @staticmethod
     def set_time_window(start_date, end_date=None):

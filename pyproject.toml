@@ -42,6 +42,7 @@ forecast_time_series = "mains.forecast_time_series:main"
 get_term_premia = "mains.get_term_premia:main"
 main = "mains.main:main"
 out_of_sample_comparisons = "mains.out_of_sample_comparisons:main"
+create_figures = "mains.create_figures:main"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^6.2.0"

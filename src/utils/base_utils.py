@@ -3,11 +3,17 @@ import numpy as np
 
 from scipy import stats
 from sklearn.metrics import r2_score
+from src.paths import Paths
 
 import calendar
 from datetime import datetime, timedelta
 
 class Utils:
+
+    @staticmethod
+    def find_data(data):
+        return Paths().data_path / data
+
 
     @staticmethod
     def individual_r2_scores(X, y, model):

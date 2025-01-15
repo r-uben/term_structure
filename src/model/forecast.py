@@ -4,9 +4,9 @@ import numpy as np
 from tqdm import tqdm
 
 from src.paths import Paths
-from src.atsm.estimation import Estimation
+from src.model.estimation import Estimation
 
-from src.atsm.utils import Utils
+from src.utils.base_utils import Utils
 
 class Forecast(Paths):
 

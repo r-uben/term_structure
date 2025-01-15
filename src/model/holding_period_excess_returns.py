@@ -5,7 +5,7 @@ from src.utils.model_utils import Utils
 from sklearn.linear_model import LinearRegression
 
 
-ADJUST = True
+ADJUST = False
 
 
 class HoldingPeriodExcessReturns(Utils):

@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from src.utils.model_utils import Utils
+from src.utils.base_utils import Utils
 
 class Trend:
 
