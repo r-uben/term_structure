@@ -68,7 +68,6 @@ log/
 .env.*.local
 
 # Data and figures
-*.svg
 !data/figures/README.md
 
 # OS specific
