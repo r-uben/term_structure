@@ -76,8 +76,6 @@ The project includes several main scripts that can be run using Poetry. For exam
 poetry run create_figures
 ```
 This generates both individual and combined plots for ACM and FF models in the `data/figures` directory.
-```
-
 
 ## Models
 
