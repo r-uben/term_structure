@@ -1,6 +1,6 @@
 # Term Structure Analysis
 
-This project implements term structure models for analyzing yield curves and macroeconomic factors, focusing on the comparison between ACM (Adrian, Crump, Moench) and FF (Favero-Fuertes) models.
+This project implements term structure models for analyzing yield curves and macroeconomic factors, focusing on the comparison between ACM (Adrian, Crump, Moench, 2013) and FF (Favero \& Fernández-Fuertes, 2025) models.
 
 ## Project Structure
 
@@ -83,11 +83,11 @@ This generates both individual and combined plots for ACM and FF models in the `
 
 The project implements and compares two term structure models:
 
-1. **ACM Model** (Adrian, Crump, Moench):
+1. **ACM Model** (Adrian, Crump \& Moench, 2013):
    - Standard affine term structure model
    - Uses principal components as pricing factors
 
-2. **FF Model** (Favero-Fuertes):
+2. **FF Model** (Favero \& Fernández-Fuertes, 2025):
    - Data-congruent term structure model
    - Incorporates macroeconomic factors
    - Features a common trend component
